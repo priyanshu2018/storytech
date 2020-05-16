@@ -1,4 +1,5 @@
 # storytech
+![Screenshot_2020-05-16-15-30-22-674_assignment com example storytech](https://user-images.githubusercontent.com/47901875/82116884-68567900-978a-11ea-86b9-2893380bd071.jpg)
 
 A new Flutter application.
 
