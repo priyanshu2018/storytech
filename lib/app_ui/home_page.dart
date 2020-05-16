@@ -137,69 +137,71 @@ class HomePage extends StatelessWidget {
                           ],
                         ),
 
-                        Text("${featuredJobs[index].location}  |  ${featuredJobs[index].duration}  |  ${featuredJobs[index].salary}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: MediaQuery.of(context).size.width*.04),),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Row(
-                              children: <Widget>[
-                                Stack(
-                                  children: <Widget>[
-                                    CircleAvatar(
-                                      radius: 16,
-
-                                      backgroundColor:featuredJobs[index].textColor ,
-                                      child: CircleAvatar(
-                                        radius: 13,
-                                        backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhhklLpQnJpmdcRWm07dxiiIp22D9ZaFlhzNF5S7EMPxEinocq&usqp=CAU') ,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(left:26.0),
-                                      child: CircleAvatar(
+                        Flexible(child: Text("${featuredJobs[index].location}  |  ${featuredJobs[index].duration}  |  ${featuredJobs[index].salary}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: MediaQuery.of(context).size.width*.04),)),
+                        Flexible(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Row(
+                                children: <Widget>[
+                                  Stack(
+                                    children: <Widget>[
+                                      CircleAvatar(
                                         radius: 16,
 
                                         backgroundColor:featuredJobs[index].textColor ,
                                         child: CircleAvatar(
                                           radius: 13,
-                                          backgroundImage: NetworkImage("https://i.ytimg.com/vi/7Xu_s1YJhyg/maxresdefault.jpg") ,
+                                          backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhhklLpQnJpmdcRWm07dxiiIp22D9ZaFlhzNF5S7EMPxEinocq&usqp=CAU') ,
                                         ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(left:52.0),
-                                      child: CircleAvatar(
-                                        radius: 16,
-
-                                        backgroundColor:featuredJobs[index].textColor ,
+                                      Padding(
+                                        padding: const EdgeInsets.only(left:26.0),
                                         child: CircleAvatar(
-                                          radius: 13,
-                                          backgroundImage: NetworkImage("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+                                          radius: 16,
+
+                                          backgroundColor:featuredJobs[index].textColor ,
+                                          child: CircleAvatar(
+                                            radius: 13,
+                                            backgroundImage: NetworkImage("https://i.ytimg.com/vi/7Xu_s1YJhyg/maxresdefault.jpg") ,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                Text("  ${featuredJobs[index].members}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: MediaQuery.of(context).size.width*.03),)
-                              ],
-                            ),
-                            Container(
-                              height: 30,
-                              width: 60,
+                                      Padding(
+                                        padding: const EdgeInsets.only(left:52.0),
+                                        child: CircleAvatar(
+                                          radius: 16,
 
-                              child: RaisedButton(
-                                padding: EdgeInsets.only(right:3,left:3),
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                   ),
-                                onPressed: () {},
-                                color: Colors.white,
-                                textColor: Colors.black,
-                                child: Text("APPLY",
-                                    style: TextStyle(fontSize: 10,color: Colors.black,fontWeight: FontWeight.bold)),
+                                          backgroundColor:featuredJobs[index].textColor ,
+                                          child: CircleAvatar(
+                                            radius: 13,
+                                            backgroundImage: NetworkImage("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Text("  ${featuredJobs[index].members}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: MediaQuery.of(context).size.width*.03),)
+                                ],
                               ),
-                            ),
-                          ],
+                              Container(
+                                height: 30,
+                                width: 60,
+
+                                child: RaisedButton(
+                                  padding: EdgeInsets.only(right:3,left:3),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(18.0),
+                                     ),
+                                  onPressed: () {},
+                                  color: Colors.white,
+                                  textColor: Colors.black,
+                                  child: Text("APPLY",
+                                      style: TextStyle(fontSize: 10,color: Colors.black,fontWeight: FontWeight.bold)),
+                                ),
+                              ),
+                            ],
+                          ),
                         )
 
                       ],
