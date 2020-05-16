@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
               Text("Featured Jobs",
-                style: TextStyle(fontSize: 25,color: Colors.black87,fontFamily: "oswald"),),
+                style: TextStyle(fontSize:MediaQuery.of(context).size.width*.07,color: Colors.black87,fontFamily: "oswald"),),
               Text("SEE ALL",style: TextStyle(fontSize: 12,color: Color(0XFF63aefc),fontWeight: FontWeight.bold))
             ],),
           ),
@@ -125,19 +125,19 @@ class HomePage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text(featuredJobs[index].organizationName,style: TextStyle(color: Colors.white,fontSize: 13),),
+                            Text(featuredJobs[index].organizationName,style: TextStyle(color: Colors.white,fontSize: MediaQuery.of(context).size.width*.03),),
                             Icon(Icons.favorite_border,color: featuredJobs[index].textColor,)
                           ],
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text(featuredJobs[index].field,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold,),),
-                            Text(featuredJobs[index].designation,style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold,)),
+                            Text(featuredJobs[index].field,style: TextStyle(color: Colors.white,fontSize: MediaQuery.of(context).size.width*.055,fontWeight: FontWeight.bold,),),
+                            Text(featuredJobs[index].designation,style: TextStyle(color: Colors.white,fontSize: MediaQuery.of(context).size.width*.055,fontWeight: FontWeight.bold,)),
                           ],
                         ),
 
-                        Text("${featuredJobs[index].location}  |  ${featuredJobs[index].duration}  |  ${featuredJobs[index].salary}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: 15),),
+                        Text("${featuredJobs[index].location}  |  ${featuredJobs[index].duration}  |  ${featuredJobs[index].salary}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: MediaQuery.of(context).size.width*.04),),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
@@ -146,41 +146,41 @@ class HomePage extends StatelessWidget {
                                 Stack(
                                   children: <Widget>[
                                     CircleAvatar(
-                                      radius: 18,
+                                      radius: 16,
 
                                       backgroundColor:featuredJobs[index].textColor ,
                                       child: CircleAvatar(
-                                        radius: 15,
+                                        radius: 13,
                                         backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhhklLpQnJpmdcRWm07dxiiIp22D9ZaFlhzNF5S7EMPxEinocq&usqp=CAU') ,
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(left:30.0),
+                                      padding: const EdgeInsets.only(left:26.0),
                                       child: CircleAvatar(
-                                        radius: 18,
+                                        radius: 16,
 
                                         backgroundColor:featuredJobs[index].textColor ,
                                         child: CircleAvatar(
-                                          radius: 15,
+                                          radius: 13,
                                           backgroundImage: NetworkImage("https://i.ytimg.com/vi/7Xu_s1YJhyg/maxresdefault.jpg") ,
                                         ),
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(left:60.0),
+                                      padding: const EdgeInsets.only(left:52.0),
                                       child: CircleAvatar(
-                                        radius: 18,
+                                        radius: 16,
 
                                         backgroundColor:featuredJobs[index].textColor ,
                                         child: CircleAvatar(
-                                          radius: 15,
+                                          radius: 13,
                                           backgroundImage: NetworkImage("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
                                         ),
                                       ),
                                     ),
                                   ],
                                 ),
-                                Text("  ${featuredJobs[index].members}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: 12),)
+                                Text("  ${featuredJobs[index].members}",style: TextStyle(color: featuredJobs[index].textColor,fontSize: MediaQuery.of(context).size.width*.03),)
                               ],
                             ),
                             Container(
@@ -228,7 +228,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                 Text("Top Companies",
-                  style: TextStyle(fontSize: 25,color: Colors.black87,fontFamily: "oswald"),),
+                  style: TextStyle(fontSize: MediaQuery.of(context).size.width*.07,color: Colors.black87,fontFamily: "oswald"),),
                 Text("SEE ALL",style: TextStyle(fontSize: 12,color: Color(0XFF63aefc),fontWeight: FontWeight.bold))
               ],),
             ),
@@ -272,8 +272,8 @@ class HomePage extends StatelessWidget {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text(topCompanies[index].name,style: TextStyle(color: Colors.black87,fontSize: 15,fontWeight: FontWeight.bold),),
-                            Text(topCompanies[index].location,style: TextStyle(color: Colors.grey,fontSize: 10),)
+                            Text(topCompanies[index].name,style: TextStyle(color: Colors.black87,fontSize: MediaQuery.of(context).size.width*.04,fontWeight: FontWeight.bold),),
+                            Text(topCompanies[index].location,style: TextStyle(color: Colors.grey,fontSize: MediaQuery.of(context).size.width*.03),)
 
 
 
