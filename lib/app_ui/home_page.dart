@@ -252,6 +252,7 @@ class HomePage extends StatelessWidget {
                             width: MediaQuery.of(context).size.width*.25,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
+
                               color: Colors.white,
                               boxShadow: [BoxShadow(
                                 color: Colors.grey.shade300,blurRadius: 10
@@ -259,9 +260,11 @@ class HomePage extends StatelessWidget {
                               image: DecorationImage(
                                 image: topCompanies[index].logo,
                                 fit: BoxFit.fill
-                              )
+                              ),
+
 
                             ),
+
 
                           ),
                         ),

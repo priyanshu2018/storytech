@@ -8,7 +8,7 @@ List topCompanies=[
   TopCompanies(logo: NetworkImage("https://www.freeiconspng.com/uploads/flame-logo-png-30.png",scale: 5),location: "New York",name: "KashWare"),
   TopCompanies(logo: NetworkImage("https://cdn.freebiesupply.com/logos/large/2x/ideal-logo-png-transparent.png",scale: 5),location: "Japan",name: "Tradexa"),
   TopCompanies(logo: NetworkImage("https://www.freelogodesign.org/Content/img/logo-samples/bakary.png",scale: 5),location: "China",name: "CinemaFX"),
-  TopCompanies(logo: NetworkImage("https://w7.pngwing.com/pngs/894/856/png-transparent-1-and-r-logo-letters-logo-blue-text-logo.png",scale: 5),location: "London",name: "Transchamp"),
+  TopCompanies(logo: NetworkImage("https://designermag.org/wp-content/uploads/2013/10/TransparencyLogo-Design.jpg",scale: 5),location: "London",name: "Transchamp"),
   TopCompanies(logo: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png",scale: 5),location: "Sudan",name: "CRAW Security"),
   TopCompanies(logo: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7IP0MmeFhEjs5aRfJmCI93Wi6MvskUFJdWhqdLzu4tByDLg-Y&usqp=CAU",scale: 5),location: "Remote",name: "Intellify"),
   TopCompanies(logo: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCMqYhXtN9bltg3OhdWzqX3A-TYOlfplRP7MWcg7VksKxZ8cGe&usqp=CAU",scale: 5),location: "Russia",name: "Expanrr"),
